@@ -1,0 +1,227 @@
+.wallet-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wallet-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.wallet-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px 0 24px;
+}
+
+.wallet-modal-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.wallet-modal-close {
+  background: var(--color-surface-alt);
+  border: none;
+  font-size: 1.4rem;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.wallet-modal-close:hover {
+  background: var(--color-surface-alt);
+  color: var(--color-ink);
+}
+
+.wallet-balance-section {
+  margin: 24px;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent) 100%);
+  border-radius: 16px;
+  text-align: center;
+  color: var(--color-ink);
+}
+
+.wallet-balance-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.wallet-balance-amount {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.wallet-topup-form {
+  padding: 0 24px 24px 24px;
+}
+
+.wallet-topup-row {
+  display: flex;
+  gap: 8px;
+}
+
+.wallet-topup-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.wallet-topup-input:focus {
+  border-color: var(--color-accent);
+}
+
+.wallet-topup-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent) 100%);
+  color: var(--color-ink);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.wallet-topup-btn:hover {
+  opacity: 0.9;
+}
+
+.wallet-topup-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wallet-message {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--color-secondary-soft);
+  color: var(--color-secondary-ink);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.wallet-message-error {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.wallet-transactions {
+  padding: 0 24px 24px 24px;
+}
+
+.wallet-transactions h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0 0 16px 0;
+}
+
+.wallet-empty {
+  text-align: center;
+  color: var(--color-ink-faint);
+  font-size: 0.9rem;
+  padding: 24px 0;
+}
+
+.wallet-tx-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wallet-tx-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  background: var(--color-bg);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.wallet-tx-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.wallet-tx-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wallet-tx-type {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.wallet-tx-desc {
+  font-size: 0.8rem;
+  color: var(--color-ink-muted);
+}
+
+.wallet-tx-date {
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+}
+
+.wallet-tx-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wallet-tx-amount {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.wallet-tx-positive {
+  color: var(--color-secondary-ink);
+}
+
+.wallet-tx-negative {
+  color: var(--color-danger);
+}
+
+.wallet-tx-balance {
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+}
